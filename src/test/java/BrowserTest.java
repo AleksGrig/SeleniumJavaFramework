@@ -7,6 +7,7 @@ public class BrowserTest {
 		
 		String projectPath = System.getProperty("user.dir");
 		
+		
 		System.setProperty("webdriver.gecko.driver", projectPath + "\\drivers\\geckodriver\\geckodriver.exe");
 		WebDriver driver = new FirefoxDriver();
 		driver.get("http://seleniumhq.org/");
