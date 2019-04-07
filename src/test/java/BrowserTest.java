@@ -1,7 +1,10 @@
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
+import java.util.List;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
@@ -16,7 +19,7 @@ public class BrowserTest {
 		//WebDriverManager.edgedriver().setup();
 		//WebDriverManager.iedriver().setup();
 		
-		String projectPath = System.getProperty("user.dir");
+		//String projectPath = System.getProperty("user.dir");
 		
 		//System.setProperty("webdriver.gecko.driver", projectPath + "\\drivers\\geckodriver\\geckodriver.exe");
 		//WebDriver driver = new FirefoxDriver();
@@ -27,6 +30,10 @@ public class BrowserTest {
 		//System.setProperty("webdriver.ie.driver", projectPath + "/drivers/iedriver/IEDriverServer.exe");
 		//WebDriver driver = new InternetExplorerDriver();
 	
-		driver.get("http://seleniumhq.org");
+		driver.get("http://google.com");
+		WebElement textBox = driver.findElement(By.xpath("//input[@type='text']"));
+		textBox.sendKeys("ALEX IS HERE!!!");
+		List<WebElement> list = driver.findElements(By.xpath("//input"));
+		System.out.println(list.size());
 	}
 }
