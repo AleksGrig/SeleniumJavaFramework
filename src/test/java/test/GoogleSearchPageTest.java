@@ -9,7 +9,7 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 
 import pages.GoogleSearchPage;
 
-public class GoogleSearchTest {
+public class GoogleSearchPageTest {
 	
 	private static WebDriver driver = null;
 
