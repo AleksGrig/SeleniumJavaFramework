@@ -1,5 +1,6 @@
 eclipse.preferences.version=1
 encoding//src/test/java/BrowserTest.java=UTF-8
 encoding//src/test/java/pages/GoogleSearchPage.java=UTF-8
-encoding//src/test/java/test/GoogleSearchTest.java=UTF-8
+encoding//src/test/java/pages/GoogleSearchPageObjects.java=UTF-8
+encoding//src/test/java/test/GoogleSearchPageTest.java=UTF-8
 encoding//src/test/java/test/Test1_GoogleSearch.java=UTF-8
