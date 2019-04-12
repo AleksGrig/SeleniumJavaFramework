@@ -41,7 +41,7 @@ public class ExtentReportsBasicDemo {
 		test1.pass("Clicked submit button");
 
 		driver.close();
-		driver.quit();
+		// driver.quit();
 		test1.pass("Closed browser");
 
 		test1.info("Test Completed");
