@@ -16,7 +16,7 @@ public class BrowserTest {
 		//WebDriverManager.operadriver().setup();
 		//WebDriverManager.phantomjs().setup();
 		//WebDriverManager.edgedriver().setup();
-		//WebDriverManager.iedriver().setup();
+		// WebDriverManager.iedriver().setup();
 		
 		//String projectPath = System.getProperty("user.dir");
 		
@@ -27,7 +27,7 @@ public class BrowserTest {
 		WebDriver driver = new ChromeDriver();
 		
 		//System.setProperty("webdriver.ie.driver", projectPath + "/drivers/iedriver/IEDriverServer.exe");
-		//WebDriver driver = new InternetExplorerDriver();
+		// WebDriver driver = new InternetExplorerDriver();
 	
 		driver.get("http://google.com");
 		WebElement textBox = driver.findElement(By.xpath("//input[@type='text']"));
