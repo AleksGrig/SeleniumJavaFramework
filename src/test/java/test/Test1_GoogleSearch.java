@@ -13,7 +13,6 @@ public class Test1_GoogleSearch {
 	}
 	
 	public static void googleSearch() {
-		
 		WebDriverManager.chromedriver().setup();
 		WebDriver driver = new ChromeDriver();
 		
@@ -29,5 +28,6 @@ public class Test1_GoogleSearch {
 		driver.findElement(By.xpath("//div[@class='FPdoLc VlcLAe']//input[@value='Поиск в Google']")).click();
 		
 		System.out.println("Test completed successfully");
+
 	}
 }
