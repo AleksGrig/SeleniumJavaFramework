@@ -15,7 +15,6 @@ public class GoogleSearchPageTest {
 	}
 	
 	public static void googleSearch() {
-		
 		WebDriverManager.chromedriver().setup();
 		driver = new ChromeDriver();
 		
@@ -32,5 +31,6 @@ public class GoogleSearchPageTest {
 		//driver.findElement(By.xpath("//div[@class='FPdoLc VlcLAe']//input[@value='Поиск в Google']")).click();
 		GoogleSearchPage.button_search(driver).click();
 		System.out.println("Test completed successfully");
+
 	}
 }
